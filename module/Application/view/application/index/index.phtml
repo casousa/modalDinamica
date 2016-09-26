@@ -1,0 +1,29 @@
+<?php
+    //CSS
+    $this->headLink()
+                ->prependStylesheet($this->basePath() . '/css/style.css');
+    
+    //JS
+    $this->headScript()
+        ->prependFile($this->basePath() . '/js/request_modal.js')
+        ->prependFile($this->basePath() . '/js/modal_cadastro.js')
+        ->prependFile($this->basePath() . '/js/jquery.mask.min.js');
+?>
+<?= $this->partial("partials/mensagens/flashMessenger.phtml"); ?>
+<?= $this->partial("partials/mensagens/msgError.phtml"); ?>
+<div class="row">
+    <div class="col-md-12">
+        <h1 class="text-center">MODAL DINÂMICA</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <a href="#" 
+           class="cadastro_registro btn btn-sm btn-default" 
+           title="Cadastro" 
+           data-title="Título Cadastro">
+            ABRIR MODAL
+        </a>
+    </div>
+</div>
+<?= $this->partial("partials/modal/modal_cadastro.phtml"); ?>

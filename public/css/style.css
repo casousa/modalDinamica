@@ -1,0 +1,21 @@
+div.alert ul li{
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+form ul li::before {
+    content: "\e014";
+    font-family: 'Glyphicons Halflings';
+    margin-right: 3px;
+}
+
+form ul li {
+    color:#a94442;
+    padding: 5px;
+    font-weight: bolder;
+    margin-left:-40px;
+    list-style-type:none;
+}
+
+
+
